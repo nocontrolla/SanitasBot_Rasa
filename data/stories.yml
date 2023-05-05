@@ -1,0 +1,61 @@
+version: "3.1"
+
+stories:
+
+- story: happy path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - action: utter_ask_for_more_information
+  - intent: affirm
+  - intent: describe_symptoms
+  - action: action_ask_for_information
+
+- story: happy path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: deny
+  - action: utter_goodbye
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: deny
+  - action: utter_goodbye
+
+# - story: sad path 2
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: deny
+#   - action: utter_ask_what_wrong
+#   - intent: describe_symptoms
+#   - action: action_ask_for_information
+  
+
+- story: ask for information about a health related  issue
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_ask_what_wrong
+  - intent: describe_symptoms
+  - action: action_ask_for_information
+  - action: utter_hope_it_helped

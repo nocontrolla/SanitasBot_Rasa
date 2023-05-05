@@ -1,0 +1,73 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - describe_symptoms
+
+entities:
+  - symptom
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+  - text: "Hey! How are you doing?"
+  - text: "Hey! Have you been well?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+  - text: "Did that assist you in any way?"
+  - text: "Did that offer any help?"
+
+  utter_happy:
+  - text: "Great, carry on, What else can I assist you with"
+  - text: "Excellent, continue, How else may I be of assistance?"
+  - text: "Fantastic, proceed, What other questions do you have?"
+  - text: "Superb, press on, Do you need help with anything else?"
+  - text: "Awesome, go ahead, Is there anything more I can do for you?"
+  - text: "Marvelous, push on, Is there anything else on your mind that I can assist you with?"
+
+
+  utter_goodbye:
+  - text: "Okay then, GoodBye"
+  - text: "Alright, take care."
+  - text: "Very well, goodbye."
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_hope_it_helped:
+  - text: "Hope it helped"
+  - text: "Hopefully that was beneficial."
+  - text: "Trust that provided some assistance."
+
+  utter_ask_what_wrong:
+  - text: "Tell me what do you feel is wrong?"
+  - text: "Please share with me any health concerns that you have."
+  - text: "What health issues are you experiencing? Please tell me about them."
+  - text: "I'm here to listen to any health problems you may have. What are they?"
+  - text: "Can you describe any symptoms or discomfort you're feeling related to your health?"
+  - text: "What specific health issues are you worried about? Please let me know so I can help.."
+
+  utter_ask_for_more_information:
+  - text: "So then, tell me what Information would you want to know about, Am happy to help"
+  - text: "Please let me know what specific information you're interested in, and I'll be glad to assist you."
+  - text: "What kind of information do you need? Just tell me, and I'll be happy to help you."
+  - text: "If there's any specific information you require, feel free to let me know, and I'll be more than happy to assist you."
+
+actions:
+  - action_ask_for_information
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
