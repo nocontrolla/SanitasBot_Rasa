@@ -5,7 +5,7 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
-openai.api_key = "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"
+openai.api_key = "OPENAI_KEY"
 
 class ActionHelloWorld(Action):
 
