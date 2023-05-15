@@ -58,4 +58,3 @@ stories:
   - action: utter_ask_what_wrong
   - intent: describe_symptoms
   - action: action_ask_for_information
-  - action: utter_hope_it_helped
