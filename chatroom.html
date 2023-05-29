@@ -1,4 +1,50 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .rw-launcher {
+        animation-delay: 0;
+        animation-duration: .5s;
+        animation-name: slide-in;
+        animation-fill-mode: forwards;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #135afe;
+        border: 0;
+        border-radius: 50%;
+        box-shadow: 0 2px 10px 1px #b5b5b5;
+        height: 60px;
+        margin: 0;
+        width: 60px;
+        box-sizing: border-box;
+      }
+
+      .rw-conversation-container .rw-header-and-loading {
+        background-color: #cfffe9;
+      }
+      
+      .rw-conversation-container .rw-header.rw-with-subtitle {
+        background-color: #1d4332
+      }
+
+      .rw-conversation-container .rw-messages-container .rw-message .rw-response {
+        background-color: #1d4332;
+        color: #ffffff
+      }
+      
+      .rw-conversation-container .rw-messages-container .rw-message .rw-client {
+        background-color: #eefff7;
+        color: #1d4332
+      }
+
+      .rw-conversation-container .rw-imageFrame {
+        background-color: #1d4332;
+      }
+
+
+    </style>
+  </head>
   <body>
       <script>!(function () {
         let e = document.createElement("script"),
@@ -15,6 +61,8 @@
                 title : "SanitasBot",
                 subtitle : "A healthcare Chatbot for health information",
                 showCloseButton: true,
+                showFullScreenButton: true,
+                showMessageDate: true
                 // add other props here
               },
               null
