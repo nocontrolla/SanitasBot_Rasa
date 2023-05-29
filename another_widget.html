@@ -16,7 +16,7 @@
 
     <script>
         // Connect to the Rasa server using SocketIO
-        const socket = io('http://0.0.0.0:5005/socket.io/');
+        const socket = io('http://0.0.0.0:5005/websocket/');
         socket.on('connect', () => {
             console.log('Connected to Rasa server');
         });
