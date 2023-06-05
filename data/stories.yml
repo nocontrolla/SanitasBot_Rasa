@@ -33,21 +33,22 @@ stories:
   - action: utter_happy
   - intent: deny
   - action: utter_goodbye
-
-# - story: sad path 2
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: mood_unhappy
-#   - action: utter_cheer_up
-#   - action: utter_did_that_help
-#   - intent: deny
-#   - action: utter_ask_what_wrong
-#   - intent: describe_symptoms
-#   - action: action_ask_for_information
   
 
-- story: ask for information about a health related  issue
+- story: ask for information about a health related issue
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_ask_what_wrong
+  - intent: describe_symptoms
+  - action: action_ask_for_information
+
+
+- story: ask for getting appointment with Doctor
   steps:
   - intent: greet
   - action: utter_greet

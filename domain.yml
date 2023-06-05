@@ -43,7 +43,7 @@ responses:
   - text: "Very well, goodbye."
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "I am SanitasBot, A chatbot service to assist you on your health enquiries powered by Rasa."
 
   utter_hope_it_helped:
   - text: "Hope it helped"
