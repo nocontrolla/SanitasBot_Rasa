@@ -19,6 +19,11 @@ responses:
   - text: "Hey! How are you doing?"
   - text: "Hey! Have you been well?"
 
+  utter_alt_greet:
+  - text: "Hello, What can we help you with today? Our System provides booking of appointments, access personal medical records, and looking at your profile with us"
+
+  
+
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
@@ -35,6 +40,19 @@ responses:
   - text: "Superb, press on, Do you need help with anything else?"
   - text: "Awesome, go ahead, Is there anything more I can do for you?"
   - text: "Marvelous, push on, Is there anything else on your mind that I can assist you with?"
+
+
+  utter_appointment_trigger:
+  - text: "Do you want to book an appointment with one of our prestige healthcare proffessionals"
+  - text: "Would you like to arrange a meeting with one of our renowned healthcare professionals?"
+  - text: "Are you open to reserving a consultation slot with one of our distinguished healthcare experts?"
+  - text: "Do you have any inclination to secure an appointment with one of our esteemed healthcare practitioners?"
+  - text: "Are you interested in booking a session with one of our highly regarded healthcare specialists?"
+  - text: "Would you be interested in scheduling an appointment with one of our prestigious healthcare practitioners?"
+  - text: "Are you interested in scheduling an appointment with one of our esteemed healthcare professionals?"
+
+  utter_redirect_to_apppointment_site:
+  - text: "To book an appointment to one of our healthcare proffesionals, go to 'http://127.0.0.1:8000/appointment/patient-book-appointment' "
 
 
   utter_goodbye:

@@ -17,6 +17,29 @@ nlu:
     - goodevening
     - good afternoon
 
+- intent: servicesoffered
+  examples: |
+    - What types of services do you offer in this system?
+    - What kind of services are available in this system?
+    - Can you provide an overview of the services offered in this system?
+    - What services are provided within this system?
+    - Could you please list the different services available in this system?
+    - I'm interested in knowing the range of services offered in this system. Could you provide more information?
+
+- intent: book_appointment
+  examples: |
+    - I want to book an appointment with a Doctor about a problem I am having.
+    - I need to schedule an appointment with a Doctor regarding an issue I'm experiencing.
+    - I would like to reserve a consultation with a Doctor to discuss a problem I have.
+    - I'm interested in booking an appointment with a Doctor for a health concern I'm facing.
+    - Can I arrange a meeting with a Doctor to address a specific issue I'm dealing with?
+    - I'm looking to set up an appointment with a Doctor regarding a problem I need to discuss.
+    - I'd like to schedule a Doctor's appointment to discuss a health issue I'm experiencing.
+    - Is it possible to set up a consultation with a Doctor regarding a problem I need assistance with?
+    - Can I arrange an appointment with a Doctor to address a specific health concern I have?
+    - I'm seeking to book a Doctor's appointment for a problem I would like to discuss.
+    - I'm interested in securing an appointment with a Doctor about a specific issue I'm facing.
+
 - intent: goodbye
   examples: |
     - cu
