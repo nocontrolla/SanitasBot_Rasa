@@ -61,10 +61,20 @@ stories:
   - action: utter_redirect_to_apppointment_site
 
 
-- story: ask_what_service
+- story: ask_what_appointment_service
   steps:
   - intent: greet
   - action: utter_greet
   - intent: servicesoffered
   - action: utter_alt_greet
   - intent: book_appointment
+  - action: utter_redirect_to_apppointment_site
+
+- story: ask_medicalrecords_service
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: servicesoffered
+  - action: utter_alt_greet
+  - intent: patient_service
+  - action: utter_redirect_to_patient_view

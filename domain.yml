@@ -9,6 +9,8 @@ intents:
   - mood_unhappy
   - bot_challenge
   - describe_symptoms
+  - book_appointment
+  - servicesoffered
 
 entities:
   - symptom
@@ -22,7 +24,7 @@ responses:
   utter_alt_greet:
   - text: "Hello, What can we help you with today? Our System provides booking of appointments, access personal medical records, and looking at your profile with us"
 
-  
+
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -54,7 +56,9 @@ responses:
   utter_redirect_to_apppointment_site:
   - text: "To book an appointment to one of our healthcare proffesionals, go to 'http://127.0.0.1:8000/appointment/patient-book-appointment' "
 
-
+  utter_redirect_to_patient_view:
+  - text: "To take a look of your medical information for registered users, go to 'http://127.0.0.1:8000/hospital/patient-dashboard' "
+  
   utter_goodbye:
   - text: "Okay then, GoodBye"
   - text: "Alright, take care."
