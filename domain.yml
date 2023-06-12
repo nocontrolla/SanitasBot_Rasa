@@ -11,9 +11,13 @@ intents:
   - describe_symptoms
   - book_appointment
   - servicesoffered
+  - patient_service
 
 entities:
   - symptom
+  - services
+  - booking
+  - storeddata
 
 responses:
   utter_greet:
@@ -42,6 +46,10 @@ responses:
   - text: "Superb, press on, Do you need help with anything else?"
   - text: "Awesome, go ahead, Is there anything more I can do for you?"
   - text: "Marvelous, push on, Is there anything else on your mind that I can assist you with?"
+  - text: "So then, tell me what Information would you want to know about, Am happy to help"
+  - text: "Please let me know what specific information you're interested in, and I'll be glad to assist you."
+  - text: "What kind of information do you need? Just tell me, and I'll be happy to help you."
+  - text: "If there's any specific information you require, feel free to let me know, and I'll be more than happy to assist you."
 
 
   utter_appointment_trigger:
@@ -80,12 +88,7 @@ responses:
   - text: "Can you describe any symptoms or discomfort you're feeling related to your health?"
   - text: "What specific health issues are you worried about? Please let me know so I can help.."
 
-  utter_ask_for_more_information:
-  - text: "So then, tell me what Information would you want to know about, Am happy to help"
-  - text: "Please let me know what specific information you're interested in, and I'll be glad to assist you."
-  - text: "What kind of information do you need? Just tell me, and I'll be happy to help you."
-  - text: "If there's any specific information you require, feel free to let me know, and I'll be more than happy to assist you."
-
+  
 actions:
   - action_ask_for_information
 

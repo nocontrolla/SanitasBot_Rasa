@@ -5,7 +5,9 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
-openai.api_key = "YOUR-OWN-OPENAI-API-KEY"
+from models.OPENAI import openaikey # register into OpenAI and generate API secret key and store it safely
+
+openai.api_key = openaikey # use it in place for calling to the model
 
 class ActionHelloWorld(Action):
 
