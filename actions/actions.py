@@ -23,7 +23,7 @@ class ActionHelloWorld(Action):
         completion = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": "You are a healthcare chatbot known as SanitasBot that provides information about diseases and symptoms"},
+                {"role": "system", "content": "You are a healthcare chatbot known as SanitasBot that provides information about diseases and symptoms and responds what it is if the prompt doesn't relate to healthcare"},
                 {"role": "user", "content": user_message}
             ]
         )

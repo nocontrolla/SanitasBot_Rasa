@@ -8,8 +8,20 @@ stories:
       - action: utter_greet
       - intent: mood_great
       - action: utter_happy
-      - intent: affirm
       - intent: describe_symptoms
+        entities:  # Optional
+        - symptom: headache
+        - symptom: toothache
+        - symptom: Fever
+        - symptom: Cough
+        - symptom: Fatigue
+        - symptom: Headache
+        - symptom: Nausea
+        - symptom: Dizziness
+        - symptom: Rash
+        - symptom: Soreness
+        - symptom: Chills
+        - symptom: Sweating
       - action: action_ask_for_information
 
   - story: happy path 2
@@ -27,7 +39,6 @@ stories:
       - action: utter_greet
       - intent: mood_unhappy
       - action: utter_cheer_up
-      - action: utter_did_that_help
       - intent: affirm
       - action: utter_happy
       - intent: deny
@@ -40,21 +51,28 @@ stories:
       - action: utter_greet
       - intent: mood_unhappy
       - action: utter_cheer_up
-      - action: utter_did_that_help
       - intent: deny
       - action: utter_ask_what_wrong
       - intent: describe_symptoms
-      - action: utter_happy
+        entities:  # Optional
+        - symptom: headache
+        - symptom: toothache
+        - symptom: Fever
+        - symptom: Cough
+        - symptom: Fatigue
+        - symptom: Headache
+        - symptom: Nausea
+        - symptom: Dizziness
+        - symptom: Rash
+        - symptom: Soreness
+        - symptom: Chills
+        - symptom: Sweating
+      - action: action_ask_for_information
 
 
-  - story: ask for getting appointment with Doctor
+  - story: appointment with Doctor
     steps:
-      - intent: greet
-      - action: utter_greet
       - intent: mood_unhappy
-      - action: utter_cheer_up
-      - action: utter_did_that_help
-      - intent: deny
       - action: utter_appointment_trigger
       - intent: affirm
       - action: utter_redirect_to_apppointment_site
@@ -62,19 +80,27 @@ stories:
 
   - story: appointment service
     steps:
-      - intent: greet
-      - action: utter_greet
       - intent: servicesoffered
+        entities:  # Optional
+          - services: services
       - action: utter_alt_greet
       - intent: book_appointment
+        entities: # Optional
+          - booking: book
+          - booking: appointments
+          - booking: appointment
       - action: utter_redirect_to_apppointment_site
 
 
   - story: medicalrecords service
     steps:
-      - intent: greet
-      - action: utter_greet
       - intent: servicesoffered
+        entities:  # Optional
+          - services: services
       - action: utter_alt_greet
       - intent: patient_service
+        entities:
+          - storeddata: records
+          - storeddata: medical information
+          - storeddata: medical records
       - action: utter_redirect_to_patient_view

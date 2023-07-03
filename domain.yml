@@ -12,6 +12,7 @@ intents:
   - book_appointment
   - servicesoffered
   - patient_service
+  - non_healthcare_query
 
 entities:
   - symptom
@@ -26,29 +27,19 @@ responses:
   - text: "Hey! Have you been well?"
 
   utter_alt_greet:
-  - text: "Hello, What can we help you with today? Our System provides booking of appointments, access personal medical records, and looking at your profile with us"
+  - text: "What can we help you with today? Our System provides booking of appointments, access personal medical records, and looking at your profile with us"
 
 
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
+  - text: "Here is something to cheer you up, hope it helps. Did that help you?"
     image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-  - text: "Did that assist you in any way?"
-  - text: "Did that offer any help?"
 
   utter_happy:
   - text: "Great, carry on, What else can I assist you with"
   - text: "Excellent, continue, How else may I be of assistance?"
   - text: "Fantastic, proceed, What other questions do you have?"
   - text: "Superb, press on, Do you need help with anything else?"
-  - text: "Awesome, go ahead, Is there anything more I can do for you?"
-  - text: "Marvelous, push on, Is there anything else on your mind that I can assist you with?"
-  - text: "So then, tell me what Information would you want to know about, Am happy to help"
-  - text: "Please let me know what specific information you're interested in, and I'll be glad to assist you."
-  - text: "What kind of information do you need? Just tell me, and I'll be happy to help you."
   - text: "If there's any specific information you require, feel free to let me know, and I'll be more than happy to assist you."
 
 
@@ -58,8 +49,6 @@ responses:
   - text: "Are you open to reserving a consultation slot with one of our distinguished healthcare experts?"
   - text: "Do you have any inclination to secure an appointment with one of our esteemed healthcare practitioners?"
   - text: "Are you interested in booking a session with one of our highly regarded healthcare specialists?"
-  - text: "Would you be interested in scheduling an appointment with one of our prestigious healthcare practitioners?"
-  - text: "Are you interested in scheduling an appointment with one of our esteemed healthcare professionals?"
 
   utter_redirect_to_apppointment_site:
   - text: "To book an appointment to one of our healthcare proffesionals, go to 'http://127.0.0.1:8000/appointment/patient-book-appointment' "
@@ -94,5 +83,5 @@ actions:
 
 session_config:
   session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  carry_over_slots_to_new_session: false
 
