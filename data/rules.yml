@@ -7,7 +7,7 @@ rules:
   - intent: goodbye
   - action: utter_goodbye
 
-- rule: Say 'I am SanitasBot, A chatbot for helping you out your health enquiries. My features are limited but maybe our medical staff can assist you on your enquiries.' anytime the user challenges
+- rule: Say I am a SanitasBot anytime the user challenges
   steps:
   - intent: bot_challenge
   - action: utter_iamabot

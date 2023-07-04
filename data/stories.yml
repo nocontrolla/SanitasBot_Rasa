@@ -104,3 +104,26 @@ stories:
           - storeddata: medical information
           - storeddata: medical records
       - action: utter_redirect_to_patient_view
+
+
+
+  - story: out of scope queries
+    steps:
+      - intent: non_healthcare_query
+      - action: utter_defaultbotmessage
+      - intent: affirm
+      - action: utter_alt_greet
+
+  
+  - story: bot challenge
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+
+  - story: medical advice assistance
+    steps:
+      - intent: ask_for_advice
+      - action: action_ask_for_information
+      - intent: describe_symptoms
+      - action: action_ask_for_information

@@ -12,6 +12,7 @@ intents:
   - book_appointment
   - servicesoffered
   - patient_service
+  - ask_for_advice
   - non_healthcare_query
 
 entities:
@@ -22,13 +23,22 @@ entities:
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
-  - text: "Hey! How are you doing?"
-  - text: "Hey! Have you been well?"
+  - text: "Hi! Welcome to SanitasBot, How are you?"
+  - text: "Hello! Delighted to have you today, How are you doing?"
+  - text: "Welcome! I am SanitasBot, Have you been well?"
 
   utter_alt_greet:
-  - text: "What can we help you with today? Our System provides booking of appointments, access personal medical records, and looking at your profile with us"
-
+  - text: "Welcome! Our System provides booking of appointments, access personal medical records, and looking at your profile with us, What would you like me to service you with?"
+  - text: "Welcome! Our platform offers the option to schedule appointments, access your personal medical records, and review your profile. How can I help you today?"
+  - text: "Welcome! You can use our system to book appointments, retrieve your medical records, and check your profile details. How may I be of service?"
+  - text: "Welcome! Our system enables you to make appointments, view your medical records, and explore your profile information. How can I assist you?"
+  - text: "Welcome! With our system, you have the ability to schedule appointments, access personal medical records, and review your profile with us. How may I help you today?"
+  - text: "Welcome! You can utilize our platform to book appointments, access your personal medical records, and take a look at your profile. What can I assist you with?"
+  - text: "Welcome! In our system, you can easily book appointments, access personal medical records, and view your profile. How may I be of assistance?"
+  - text: "Welcome! We provide services for appointment booking, accessing personal medical records, and viewing your profile. How can I assist you today?"
+  - text: "Welcome! With our system, you have the convenience of booking appointments, accessing personal medical records, and viewing your profile. How may I help you?"
+  - text: "Welcome! You have the option to schedule appointments, access personal medical records, and view your profile through our system. What can I do for you?"
+  - text: "Welcome! Our system allows you to book appointments, access personal medical records, and review your profile. How may I assist you today?"
 
 
   utter_cheer_up:
@@ -52,10 +62,20 @@ responses:
 
   utter_redirect_to_apppointment_site:
   - text: "To book an appointment to one of our healthcare proffesionals, go to 'http://127.0.0.1:8000/appointment/patient-book-appointment' "
+  - text: "To schedule an appointment with one of our healthcare professionals, please visit 'http://127.0.0.1:8000/appointment/patient-book-appointment'"
+  - text: "To book a consultation with our healthcare professionals, kindly go to 'http://127.0.0.1:8000/appointment/patient-book-appointment'"
+  - text: "If you would like to set up an appointment with one of our healthcare providers, please access 'http://127.0.0.1:8000/appointment/patient-book-appointment'"
+  - text: "To arrange a meeting with our medical team, simply go to 'http://127.0.0.1:8000/appointment/patient-book-appointment'"
+  - text: "To secure an appointment with our healthcare practitioners, navigate to 'http://127.0.0.1:8000/appointment/patient-book-appointment'"
 
   utter_redirect_to_patient_view:
   - text: "To take a look of your medical information for registered users, go to 'http://127.0.0.1:8000/hospital/patient-dashboard' "
-  
+  - text: "To access your medical information, please visit 'http://127.0.0.1:8000/hospital/patient-dashboard'"
+  - text: "For registered users, you can view your medical information by going to 'http://127.0.0.1:8000/hospital/patient-dashboard'"
+  - text: "If you're a registered user, you can check your medical information by navigating to 'http://127.0.0.1:8000/hospital/patient-dashboard'"
+  - text: "To view your medical records, simply go to 'http://127.0.0.1:8000/hospital/patient-dashboard' if you're already registered"
+  - text: "For registered users, the link 'http://127.0.0.1:8000/hospital/patient-dashboard' allows you to access your medical information"
+
   utter_goodbye:
   - text: "Okay then, GoodBye"
   - text: "Alright, take care."
@@ -63,11 +83,17 @@ responses:
 
   utter_iamabot:
   - text: "I am SanitasBot, A chatbot service to assist you on your health enquiries powered by Rasa."
+  - text: "I am SanitasBot, A chatbot for helping you out your health enquiries. My features are limited but maybe our medical staff can assist you on your enquiries."
+
+  utter_defaultbotmessage:
+  - text: "Please note that I am designed to handle simple healthcare-related questions like providing you with medical advice, and directing you to where you can book. Feel free to ask me anything related to your health!"
+  - text: "Just a friendly reminder that my main purpose is to address healthcare-related queries like offering medical advice, and directing you to where you can book with our proffesionals."
+  - text: "Keep in mind that I am a healthcare chatbot, dedicated to answering medical questions, offering advice, and help direct you through our website for other services. How may I be of service?"
 
   utter_hope_it_helped:
   - text: "Hope it helped"
   - text: "Hopefully that was beneficial."
-  - text: "Trust that provided some assistance."
+  - text: "I hope that provided some assistance."
 
   utter_ask_what_wrong:
   - text: "Tell me what do you feel is wrong?"

@@ -55,23 +55,61 @@ nlu:
 
   - intent: affirm
     examples: |
-      - yes
-      - y
-      - indeed
-      - of course
-      - that sounds good
+      - Yes
+      - Indeed
+      - Of course
+      - Okay
+      - That sounds good
+      - That sounds great
       - correct
-      - yeah
+      - Yes
+      - Yeah
+      - Sure
+      - Absolutely
+      - Indeed
+      - Definitely
+      - Affirmative
+      - OK
+      - Alright
+      - Of course
+      - That's correct
+      - I agree
+      - I confirm
+      - Sure thing
+      - You're right
+      - That's right
+      - Absolutely right
+      - Yes, please
+      - Yes, that's it
 
   - intent: deny
     examples: |
-      - no
-      - never
+      - No
+      - Never
       - I don't think so
-      - don't like that
-      - no way
+      - Don't like that
+      - No way
+      - Not really
+      - Nope
       - not really
-      - nope
+      - not sure
+      - I don't think so
+      - I disagree
+      - I'm not interested
+      - Nah
+      - I'd rather not
+      - I don't want to
+      - That's not right
+      - That's incorrect
+      - I beg to differ
+      - Negative
+      - I decline
+      - No way
+      - Absolutely not
+      - I'm sorry, but no
+      - No, thank you
+      - No, I'm good
+
 
   - intent: mood_great
     examples: |
@@ -99,6 +137,14 @@ nlu:
       - Please grant me the opportunity to take a look at my [medical records](storeddata) in your healthcare organization.
       - I'm seeking access to the medical [information](storeddata) I hold with your healthcare entity for review.
 
+  - intent: ask_for_advice
+    examples: |
+      - I want to ask for some medical advice on something am feeling?
+      - I want to ask for some medical advice on something I'm feeling
+      - Can you provide medical advice on a symptom I have?
+      - I need some advice regarding my health issue
+      - What should I do about a specific health problem I'm experiencing?
+      - Can you give me guidance on a medical matter?
 
   - intent: mood_unhappy
     examples: |
@@ -116,13 +162,15 @@ nlu:
       - extremly sad
       - so saad
       - so sad
+      - am bad
+
 
   - intent: bot_challenge
     examples: |
-      - are you a bot?
-      - are you a human?
-      - am I talking to a bot?
-      - am I talking to a human?
+      - Are you a bot?
+      - Are you a human?
+      - Am I talking to a bot?
+      - Am I talking to a human?
 
   - intent: describe_symptoms
     examples: |
@@ -530,7 +578,7 @@ nlu:
 
 
   - intent: non_healthcare_query
-      examples: |
+    examples: |
       - What's the current time?
       - Can you recommend a good movie to watch?
       - How is the stock market doing today?
