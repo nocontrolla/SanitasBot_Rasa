@@ -172,6 +172,12 @@ nlu:
       - Am I talking to a bot?
       - Am I talking to a human?
 
+
+  - intent: describe_disease
+    examples: |
+      - I am suffering from a disease called [Mengitis](disease)
+      
+
   - intent: describe_symptoms
     examples: |
       - Do you remember what we talked about?
