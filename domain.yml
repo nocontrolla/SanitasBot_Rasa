@@ -14,12 +14,15 @@ intents:
   - patient_service
   - ask_for_advice
   - non_healthcare_query
+  - describe_disease
 
 entities:
   - symptom
   - services
   - booking
   - storeddata
+  - disease
+  - advice
 
 responses:
   utter_greet:
@@ -61,20 +64,20 @@ responses:
   - text: "Are you interested in booking a session with one of our highly regarded healthcare specialists?"
 
   utter_redirect_to_apppointment_site:
-  - text: "To book an appointment to one of our healthcare proffesionals, go to 'http://127.0.0.1:8000/appointment/patient-book-appointment' "
-  - text: "To schedule an appointment with one of our healthcare professionals, please visit 'http://127.0.0.1:8000/appointment/patient-book-appointment'"
-  - text: "To book a consultation with our healthcare professionals, kindly go to 'http://127.0.0.1:8000/appointment/patient-book-appointment'"
-  - text: "If you would like to set up an appointment with one of our healthcare providers, please access 'http://127.0.0.1:8000/appointment/patient-book-appointment'"
-  - text: "To arrange a meeting with our medical team, simply go to 'http://127.0.0.1:8000/appointment/patient-book-appointment'"
-  - text: "To secure an appointment with our healthcare practitioners, navigate to 'http://127.0.0.1:8000/appointment/patient-book-appointment'"
+  - text: "To book an appointment to one of our healthcare proffesionals, go to 'http://127.0.0.1:8000/hospital/patientlogin' and click on the 'appointment' panel"
+  - text: "To schedule an appointment with one of our healthcare professionals, please visit 'http://127.0.0.1:8000/hospital/patientlogin' and click on the 'appointment' panel"
+  - text: "To book a consultation with our healthcare professionals, kindly go to 'http://127.0.0.1:8000/hospital/patientlogin' and click on the 'appointment' panel"
+  - text: "If you would like to set up an appointment with one of our healthcare providers, please access 'http://127.0.0.1:8000/hospital/patientlogin' and click on the 'appointment' panel"
+  - text: "To arrange a meeting with our medical team, simply go to 'http://127.0.0.1:8000/hospital/patientlogin' and click on the 'appointment' panel"
+  - text: "To secure an appointment with our healthcare practitioners, navigate to 'http://127.0.0.1:8000/hospital/patientlogin' and click on the 'appointment' panel"
 
   utter_redirect_to_patient_view:
-  - text: "To take a look of your medical information for registered users, go to 'http://127.0.0.1:8000/hospital/patient-dashboard' "
-  - text: "To access your medical information, please visit 'http://127.0.0.1:8000/hospital/patient-dashboard'"
-  - text: "For registered users, you can view your medical information by going to 'http://127.0.0.1:8000/hospital/patient-dashboard'"
-  - text: "If you're a registered user, you can check your medical information by navigating to 'http://127.0.0.1:8000/hospital/patient-dashboard'"
-  - text: "To view your medical records, simply go to 'http://127.0.0.1:8000/hospital/patient-dashboard' if you're already registered"
-  - text: "For registered users, the link 'http://127.0.0.1:8000/hospital/patient-dashboard' allows you to access your medical information"
+  - text: "To take a look of your medical information for registered users, go to 'http://127.0.0.1:8000/hospital/patientlogin' "
+  - text: "To access your medical information, please visit 'http://127.0.0.1:8000/hospital/patientlogin'"
+  - text: "For registered users, you can view your medical information by going to 'http://127.0.0.1:8000/hospital/patientlogin'"
+  - text: "If you're a registered user, you can check your medical information by navigating to 'http://127.0.0.1:8000/hospital/patientlogin'"
+  - text: "To view your medical records, simply go to 'http://127.0.0.1:8000/hospital/patientlogin' if you're already registered"
+  - text: "For registered users, the link 'http://127.0.0.1:8000/hospital/patientlogin' allows you to access your medical information"
 
   utter_goodbye:
   - text: "Okay then, GoodBye"

@@ -127,6 +127,7 @@ nlu:
       - so so perfect
       - so good
       - so perfect
+      - am doing great
 
   - intent: patient_service
     examples: |
@@ -137,14 +138,15 @@ nlu:
       - Please grant me the opportunity to take a look at my [medical records](storeddata) in your healthcare organization.
       - I'm seeking access to the medical [information](storeddata) I hold with your healthcare entity for review.
 
+
   - intent: ask_for_advice
     examples: |
-      - I want to ask for some medical advice on something am feeling?
-      - I want to ask for some medical advice on something I'm feeling
-      - Can you provide medical advice on a symptom I have?
-      - I need some advice regarding my health issue
+      - I want to ask for some [medical advice]{advice) on something am feeling?
+      - I want to ask for some [medical advice]{advice) on something I'm feeling
+      - Can you provide [medical advice]{advice) on a symptom I have?
+      - I need some [advice](advice) regarding my health issue
       - What should I do about a specific health problem I'm experiencing?
-      - Can you give me guidance on a medical matter?
+      - Can you give me [guidance](advice) on a [medical](advice) matter?
 
   - intent: mood_unhappy
     examples: |
@@ -175,8 +177,61 @@ nlu:
 
   - intent: describe_disease
     examples: |
-      - I am suffering from a disease called [Mengitis](disease)
-      
+      - I am suffering from a disease called [Mengitis](disease).
+      - I have been diagnosed with [COVID-19](disease).
+      - What are the symptoms of [diabetes](disease)?
+      - Can you tell me more about [cancer](disease)?
+      - I think I might have [asthma](disease). What should I do?
+      - My friend was recently diagnosed with [Alzheimer's](disease). What can I expect?
+      - Are there any treatments available for [Parkinson's](disease)?
+      - I'm concerned about [hypertension](disease). How can I manage it?
+      - What are the risk factors for [heart disease](disease)?
+      - Is [malaria](disease) contagious?
+      - I suspect I have [arthritis](disease). What are the common symptoms?
+      - Can you provide information about [depression](disease) and its treatments?
+      - My child has been diagnosed with [ADHD](disease). What should I know?
+      - Are there any preventive measures for [osteoporosis](disease)?
+      - What are the symptoms of [COVID-19](disease)?
+      - Can you tell me about [diabetes](disease) and its complications?
+      - I'm worried I might have [cancer](disease). What are the common signs?
+      - My family has a history of [asthma](disease). Am I at risk?
+      - Is [Alzheimer's](disease) hereditary?
+      - Are there any breakthrough treatments for [Parkinson's](disease)?
+      - How can I lower my risk of developing [hypertension](disease)?
+      - What are the early warning signs of [heart disease](disease)?
+      - Can you provide information on the transmission of [malaria](disease)?
+      - I have joint pain. Could it be a sign of [arthritis](disease)?
+      - What are the available therapies for managing [depression](disease)?
+      - How can I support a child with [ADHD](disease) in school?
+      - Are there any natural remedies for [osteoporosis](disease)?
+      - I recently learned about [fibromyalgia](disease). What are the main symptoms?
+      - What are the long-term effects of [COVID-19](disease)?
+      - Can you recommend any dietary changes for someone with [diabetes](disease)?
+      - Is [cancer](disease) always fatal?
+      - Can [asthma](disease) be triggered by allergies?
+      - How does [Alzheimer's](disease) progress over time?
+      - Are there any non-pharmacological treatments for [Parkinson's](disease)?
+      - What are the symptoms associated with [COVID-19](disease)?
+      - Can you explain the difference between type 1 and type 2 [diabetes](disease)?
+      - How common is [cancer](disease) among different age groups?
+      - Are there any known triggers for [asthma](disease) attacks?
+      - What are the early signs of [Alzheimer's](disease) that I should look out for?
+      - Can you provide information on the latest research advancements for [Parkinson's](disease)?
+      - Is there a correlation between stress and [hypertension](disease)?
+      - Can you explain the role of cholesterol in [heart disease](disease)?
+      - What measures can be taken to prevent [malaria](disease) when traveling to high-risk areas?
+      - How is [arthritis](disease) diagnosed and treated?
+      - Can you suggest some self-care techniques for managing [depression](disease)?
+      - Are there any alternative therapies that can complement traditional treatments for [ADHD](disease)?
+      - What are the common risk factors for developing [osteoporosis](disease)?
+      - How long does it typically take to recover from [COVID-19](disease)?
+      - Are there any specific food items to avoid for individuals with [diabetes](disease)?
+      - What are the survival rates for different stages of [cancer](disease)?
+      - Can changes in weather affect [asthma](disease) symptoms?
+      - Is there a genetic test available for detecting susceptibility to [Alzheimer's](disease)?
+      - How does exercise impact the progression of [Parkinson's](disease)?
+      - What are some natural remedies that can help in lowering blood pressure for individuals with [hypertension](disease)?
+
 
   - intent: describe_symptoms
     examples: |

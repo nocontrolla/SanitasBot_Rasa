@@ -33,6 +33,41 @@ stories:
       - intent: deny
       - action: utter_goodbye
 
+  - story: happy path 3
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+      - intent: describe_disease
+        entities:  # Optional
+        - disease: Gonorrhea
+        - disease: Schistosomiasis
+        - disease: Meningitis
+        - disease: Arthritis
+        - disease: Cancer
+        - disease: Malaria
+        - disease: Measles
+        - disease: Syphilis
+        - disease: Chlamydia
+        - disease: Hypertension
+        - disease: Diabetes
+        - disease: Ebola
+        - disease: Coronavirus
+        - disease: Influenza
+        - disease: Typhoid
+        - disease: Cholera
+        - disease: Astigmatism
+        - disease: Tuberculosis
+        - disease: COVID-19
+        - disease: Leukemia
+        - disease: Alzheimer
+        - disease: ADHD
+      - action: action_ask_for_information
+
+
+
+
   - story: sad path 1
     steps:
       - intent: greet
@@ -70,12 +105,50 @@ stories:
       - action: action_ask_for_information
 
 
+
+  - story: sad path 3
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - intent: deny
+      - action: utter_ask_what_wrong
+      - intent: describe_disease
+        entities:  # Optional
+        - disease: Gonorrhea
+        - disease: Schistosomiasis
+        - disease: Meningitis
+        - disease: Arthritis
+        - disease: Cancer
+        - disease: Malaria
+        - disease: Measles
+        - disease: Syphilis
+        - disease: Chlamydia
+        - disease: Hypertension
+        - disease: Diabetes
+        - disease: Ebola
+        - disease: Coronavirus
+        - disease: Influenza
+        - disease: Typhoid
+        - disease: Cholera
+        - disease: Astigmatism
+        - disease: Tuberculosis
+        - disease: COVID-19
+        - disease: Leukemia
+        - disease: Alzheimer
+        - disease: ADHD
+      - action: action_ask_for_information
+
+
+
   - story: appointment with Doctor
     steps:
       - intent: mood_unhappy
       - action: utter_appointment_trigger
       - intent: affirm
       - action: utter_redirect_to_apppointment_site
+
 
 
   - story: appointment service
